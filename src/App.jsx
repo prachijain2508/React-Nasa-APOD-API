@@ -21,7 +21,7 @@ function App() {
       const localkey = `NASA-$(today)`
       if (localStorage.getItem(localkey)) {
         const apidata = JSON.parse(localStorage.getItem(localkey))
-        setData(apiData)
+        setData(apidata)
         console.log('Fetched from cache today!')
         return
       }
